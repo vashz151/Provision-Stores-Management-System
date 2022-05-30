@@ -77,7 +77,7 @@ class Main(Login, Admin, User):
 
     # METHODS FOR ITEMS AND CHANGE USER BUTTONS
     def change_user(self):
-        if messagebox.askyesno("Alert!", "Do  you want to change user?") == True:
+        if messagebox.askyesno("Alert!", "Do  you want to switch user?") == True:
             self.base.commit()
             self.mainw.destroy()
             self.loginw.destroy()
