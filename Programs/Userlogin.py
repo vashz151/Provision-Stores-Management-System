@@ -9,7 +9,7 @@ from tkinter import ttk
 class Login:
     def __init__(self):
         self.loginw = Tk()
-        self.loginw.title("Login")
+        self.loginw.title("ABC PROVISION STORE")
         width = 500
         height = 600
         screen_width = self.loginw.winfo_screenwidth()
@@ -26,7 +26,7 @@ class Login:
         self.obj()
 
     def __login_del__(self):
-        if messagebox.askyesno("Quit", " Leave inventory?") == True:
+        if messagebox.askyesno("Quit", " Leaving So Soon?") == True:
             self.loginw.destroy()
             exit(0)                   # FORCE SYSTEM TO EXIT
 
@@ -44,14 +44,17 @@ class Login:
         self.loginw.bind('<Return>', self.checkuser)
         self.loginframe.place(x=103, y=95)
         self.toplabel = Label(self.loginframe, fg="white", bg="#4267b2",
-                              anchor="center", text="Login", font="Roboto 40 bold")
+                              anchor="center", text="ABC STORE", font="Roboto 20 bold")
         self.toplabel.place(x=75, y=25)
+        self.toplabel1 = Label(self.loginframe, fg="white", bg="#4267b2",
+                               anchor="center", text="Login", font="Roboto 18 bold")
+        self.toplabel1.place(x=30, y=100)
         self.us = ttk.Entry(self.loginframe, width=20,
                             textvariable=self.username, font="Roboto 14 ")
         self.us.place(x=35, y=145, height=40)
         self.pa = ttk.Entry(self.loginframe, width=20,
                             textvariable=self.password, font="Roboto 14 ")
-        self.pa.place(x=35, y=185, height=40)
+        self.pa.place(x=35, y=195, height=40)
         self.us.bind('<Button-1>', self.onclick)
         self.pa.bind('<Button-1>', self.onclick1)
         self.signin = Button(self.loginframe, width=20, text="Sign in",
