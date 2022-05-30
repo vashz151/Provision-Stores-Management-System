@@ -68,7 +68,7 @@ class Main(Login, Admin, User):
                                 "'s Sales & Inventory System", bg="#4267b2", anchor="center")
         self.storelable.config(font="Roboto 30 bold", fg="snow")
         self.storelable.place(x=360, y=30)
-        mi = PhotoImage(file="images/myprofile.png")
+        mi = PhotoImage(file="../images/myprofile.png")
         mi = mi.subsample(4, 4)
         self.myprofile = ttk.Label(self.topframe, text=(
             self.username.get()).capitalize(), image=mi, compound=TOP)

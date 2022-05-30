@@ -1,13 +1,12 @@
-
 import sqlite3
 from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk
 
-
 # LOGIN CLASS
-class Login:
 
+
+class Login:
     def __init__(self):
         self.loginw = Tk()
         self.loginw.title("Login")
@@ -33,7 +32,7 @@ class Login:
 
     # LOGIN TABLE
     def logintable(self):
-        self.base = sqlite3.connect("login.db")
+        self.base = sqlite3.connect("../Database/login.db")
         self.cur = self.base.cursor()
         self.cur.execute(
             "CREATE TABLE if not exists users ( username varchar (20),password	 varchar (20) NOT NULL,account_type varchar ( 10 ) NOT NULL,PRIMARY KEY(username));")
