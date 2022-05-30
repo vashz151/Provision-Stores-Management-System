@@ -1,4 +1,4 @@
-# Provision Store Incentory Management System
+# Provision Stores Management System
 This is a Python Tkinter based GUI application. The main objective of the application is to review sales and maintain the provision store inventory. The application is designed keeping the user in mind. Hence, it is a simple and user friendly inventory management application. 
 ##### ADMIN/STAFF Functionalities
 *	The admin can add a product, remove it or update the product details.
