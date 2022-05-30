@@ -29,7 +29,7 @@ class Main(Login, Admin, User):
 
     # OVERRIDING CLOSE BUTTON && DESTRUCTOR FOR CLASS LOGIN AND MAIN WINDOW
     def __Main_del__(self):
-        if messagebox.askyesno("Quit", " Leave Inventory?") == True:
+        if messagebox.askyesno("Quit", " Leaving So Soon?") == True:
             self.loginw.quit()
             self.mainw.quit()
             exit(0)
