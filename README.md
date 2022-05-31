@@ -12,3 +12,13 @@ This is a Python Tkinter based GUI application. The main objective of the applic
 #### USER Functionalities 
 *	The user can buy the items and generate an invoice for the same.
 *	The user can check the list of available items along with their quantity.
+
+# Setup 
+```
+pip install -r requirements.txt
+```
+
+# Execution
+```
+python main.py
+```
