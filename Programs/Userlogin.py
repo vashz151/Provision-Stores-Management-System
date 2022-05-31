@@ -46,9 +46,6 @@ class Login:
         self.toplabel = Label(self.loginframe, fg="white", bg="#4267b2",
                               anchor="center", text="ABC STORE", font="Roboto 20 bold")
         self.toplabel.place(x=75, y=25)
-        self.toplabel1 = Label(self.loginframe, fg="white", bg="#4267b2",
-                               anchor="center", text="Login", font="Roboto 18 bold")
-        self.toplabel1.place(x=30, y=100)
         self.us = ttk.Entry(self.loginframe, width=20,
                             textvariable=self.username, font="Roboto 14 ")
         self.us.place(x=35, y=145, height=40)
