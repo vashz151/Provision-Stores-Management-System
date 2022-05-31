@@ -144,7 +144,7 @@ class Login:
         self.loginw.bind('<Return>', self.checkuser)
         # ADD
         self.signin.place(x=35, y=290)
-        self.loginw.title('Login')
+        self.loginw.title('ABC PROVISION STORE')
         self.loginw.state('withdraw')
 
     # ONCLICK EVENTS

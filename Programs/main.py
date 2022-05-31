@@ -12,7 +12,7 @@ class Main(Login, Admin, User):
 
     def __init__(self):
         Login.__init__(self)
-        self.loginw.mainloop()
+        self.loginw.mainloop() #loginw is the window object
         self.loginw.state('withdraw')  # LOGIN WINDOW EXITS
         self.mainw = Toplevel(bg="#FFFFFF")
         width = 1400
